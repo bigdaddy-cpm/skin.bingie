@@ -1,0 +1,37 @@
+name: Build Kodi Repo
+
+on:
+  workflow_dispatch:
+  push:
+    branches:
+      - omega
+    paths:
+      - "1080i/**"
+      - "colors/**"
+      - "extras/**"
+      - "fonts/**"
+      - "language/**"
+      - "media/**"
+      - "resources/**"
+      - "shortcuts/**"
+      - "addon.xml"
+      - "repository.shawnstoked/**"
+      - "tools/build-kodi-repo.ps1"
+
+jobs:
+  build:
+    runs-on: windows-latest
+
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: Build repo files
+        shell: pwsh
+        run: .\tools\build-kodi-repo.ps1
+
+      - name: Upload repo artifact
+        uses: actions/upload-artifact@v4
+        with:
+          name: kodi-repo
+          path: repo
