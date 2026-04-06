@@ -1103,7 +1103,7 @@
 				<texturefocus colordiffuse="$INFO[Skin.String(OSDButtonsFocusColor)]">$PARAM[iconspath]info.png</texturefocus>
 				<texturenofocus colordiffuse="$INFO[Skin.String(OSDButtonsColor)]">$PARAM[iconspath]info.png</texturenofocus>
 				<visible>Player.HasVideo</visible>
-				<onclick>Skin.ToggleSetting(EnableOSDInfo)</onclick>
+				<onclick>ActivateWindow(playerprocessinfo)</onclick>
 			</control>
 		</control>
 		
@@ -1908,7 +1908,7 @@
                     <texturenofocus colordiffuse="$INFO[Skin.String(OSDBingieButtonsColor)]">$PARAM[iconspath]info.png</texturenofocus>
                     <visible>Player.HasVideo</visible>
 					<visible>VideoPlayer.Content(movies) | VideoPlayer.Content(episodes) | VideoPlayer.Content(livetv)</visible>
-                    <onclick>Skin.ToggleSetting(EnableOSDInfo)</onclick>
+                    <onclick>ActivateWindow(playerprocessinfo)</onclick>
 					<visible>Skin.HasSetting(bingie_osd_buttons_info)</visible>
                 </control>
             </control>
