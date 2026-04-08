@@ -92,7 +92,7 @@
 
             <!--OSD Panel-->
             <control type="group">
-                <visible>!Player.FrameAdvance + !Window.IsActive(sliderdialog) + !Window.IsActive(script-upnext-upnext.xml) + !Window.IsVisible(playerprocessinfo)</visible>
+                <visible>!Player.FrameAdvance + !Window.IsActive(sliderdialog) + !Window.IsActive(script-upnext-upnext.xml) + !Window.IsVisible(playerprocessinfo) + !Window.IsActive(1159)</visible>
                 <visible>[Window.IsActive(visualisation) | Window.IsActive(fullscreenvideo)] + !Player.HasGame</visible>
                 <include condition="!Skin.HasSetting(UseBingieOSD)">OSDPanelModern</include>
                 <include condition="Skin.HasSetting(UseBingieOSD)">OSDPanelBingie</include>

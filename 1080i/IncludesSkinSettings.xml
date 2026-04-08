@@ -1955,6 +1955,13 @@
             <param name="id" value="306" />
             <param name="addon" value="plugin.video.youtube" />
         </include>
+        <control type="button" id="307">
+            <include>SkinSettings_Button</include>
+            <label>CoreELEC</label>
+            <label2>service.coreelec.settings</label2>
+            <onclick>RunAddon(service.coreelec.settings)</onclick>
+            <visible>System.AddonIsEnabled(service.coreelec.settings)</visible>
+        </control>
     </include>
 
     <!-- Color Themes Tab -->

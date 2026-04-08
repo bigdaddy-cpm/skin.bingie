@@ -11,6 +11,6 @@ This creates:
 - `repo/addons.xml`
 - `repo/addons.xml.md5`
 - `repo/zips/repository.shawnstoked/...`
-- `repo/zips/skin.bingie/...`
+- `repo/zips/skin.bingie-testing/...`
 
 The repository addon source lives in `repository.shawnstoked/`.

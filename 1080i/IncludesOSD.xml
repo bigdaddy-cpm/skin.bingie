@@ -778,7 +778,7 @@
 	
     <include name="OSDButtons_Layout">
 		<control type="grouplist" id="200">
-			<visible>!Player.FrameAdvance + !Window.IsActive(sliderdialog) + !Window.IsActive(script-upnext-upnext.xml) + !Window.IsVisible(playerprocessinfo)</visible>
+			<visible>!Player.FrameAdvance + !Window.IsActive(sliderdialog) + !Window.IsActive(script-upnext-upnext.xml) + !Window.IsVisible(playerprocessinfo) + !Window.IsActive(1159)</visible>
             <visible>[Window.IsActive(visualisation) | Window.IsActive(fullscreenvideo)] + !Player.HasGame</visible>
             <animation type="WindowOpen">
 				<effect type="slide" start="0,400" end="0,0" tween="cubic" easing="out" delay="0" time="450" reversible="false"/>
@@ -1692,7 +1692,7 @@
 
 	<include name="OSDButtons_Bingie_Layout">
 		<control type="grouplist" id="300">		
-			<visible>!Player.FrameAdvance + !Window.IsActive(sliderdialog) + !Window.IsActive(script-upnext-upnext.xml) + !Window.IsVisible(playerprocessinfo)</visible>
+			<visible>!Player.FrameAdvance + !Window.IsActive(sliderdialog) + !Window.IsActive(script-upnext-upnext.xml) + !Window.IsVisible(playerprocessinfo) + !Window.IsActive(1159)</visible>
             <visible>[Window.IsActive(visualisation) | Window.IsActive(fullscreenvideo)] + !Player.HasGame</visible>		
 			<animation type="WindowOpen">
 				<effect type="slide" start="0,-400" end="0,0" tween="cubic" easing="out" delay="0" time="450" reversible="false"/>
@@ -1911,6 +1911,19 @@
                     <onclick>ActivateWindow(playerprocessinfo)</onclick>
 					<visible>Skin.HasSetting(bingie_osd_buttons_info)</visible>
                 </control>
+                <control type="button" id="809">
+                    <description>vs10 quick controls</description>
+                    <width>$PARAM[topsize]</width>
+                    <height>$PARAM[topsize]</height>
+                    <label/>
+                    <font/>
+                    <texturefocus colordiffuse="$INFO[Skin.String(OSDBingieButtonsFocusColor)]">$PARAM[iconspath]video_fo.png</texturefocus>
+                    <texturenofocus colordiffuse="$INFO[Skin.String(OSDBingieButtonsColor)]">$PARAM[iconspath]video.png</texturenofocus>
+                    <visible>Player.HasVideo</visible>
+                    <visible>VideoPlayer.Content(movies) | VideoPlayer.Content(episodes) | VideoPlayer.Content(livetv)</visible>
+                    <visible>System.AddonIsEnabled(service.coreelec.settings)</visible>
+                    <onclick>ActivateWindow(1159)</onclick>
+                </control>
             </control>
             <control type="label">
 				<visible>Integer.IsGreater(Container(300).NumItems,0)</visible>
@@ -1929,7 +1942,7 @@
         </control>
 		
 		<control type="group">
-			<visible>!Player.FrameAdvance + !Window.IsActive(sliderdialog) + !Window.IsActive(script-upnext-upnext.xml) + !Window.IsVisible(playerprocessinfo)</visible>
+			<visible>!Player.FrameAdvance + !Window.IsActive(sliderdialog) + !Window.IsActive(script-upnext-upnext.xml) + !Window.IsVisible(playerprocessinfo) + !Window.IsActive(1159)</visible>
             <visible>[Window.IsActive(visualisation) | Window.IsActive(fullscreenvideo)] + !Player.HasGame</visible>
 			<animation type="WindowOpen">
 				<effect type="slide" start="0,-400" end="0,0" tween="cubic" easing="out" delay="0" time="450" reversible="false"/>
@@ -1966,7 +1979,7 @@
 			</control>
 		</control>
 		<control type="grouplist" id="200">
-			<visible>!Player.FrameAdvance + !Window.IsActive(sliderdialog) + !Window.IsActive(script-upnext-upnext.xml) + !Window.IsVisible(playerprocessinfo)</visible>
+			<visible>!Player.FrameAdvance + !Window.IsActive(sliderdialog) + !Window.IsActive(script-upnext-upnext.xml) + !Window.IsVisible(playerprocessinfo) + !Window.IsActive(1159)</visible>
             <visible>[Window.IsActive(visualisation) | Window.IsActive(fullscreenvideo)] + !Player.HasGame</visible>
 			<animation type="WindowOpen">
 				<effect type="slide" start="0,400" end="0,0" tween="cubic" easing="out" delay="0" time="450" reversible="false"/>
@@ -2012,7 +2025,7 @@
 		</control>
 		
 		<control type="grouplist" id="2000">
-			<visible>!Player.FrameAdvance + !Window.IsActive(sliderdialog) + !Window.IsActive(script-upnext-upnext.xml) + !Window.IsVisible(playerprocessinfo)</visible>
+			<visible>!Player.FrameAdvance + !Window.IsActive(sliderdialog) + !Window.IsActive(script-upnext-upnext.xml) + !Window.IsVisible(playerprocessinfo) + !Window.IsActive(1159)</visible>
             <visible>[Window.IsActive(visualisation) | Window.IsActive(fullscreenvideo)] + !Player.HasGame</visible>
 			<animation type="WindowOpen">
 				<effect type="slide" start="0,400" end="0,0" tween="cubic" easing="out" delay="0" time="450" reversible="false"/>
@@ -2084,7 +2097,7 @@
 		</control>
 		
 		<control type="grouplist" id="3000">
-			<visible>!Player.FrameAdvance + !Window.IsActive(sliderdialog) + !Window.IsActive(script-upnext-upnext.xml) + !Window.IsVisible(playerprocessinfo)</visible>
+			<visible>!Player.FrameAdvance + !Window.IsActive(sliderdialog) + !Window.IsActive(script-upnext-upnext.xml) + !Window.IsVisible(playerprocessinfo) + !Window.IsActive(1159)</visible>
             <visible>[Window.IsActive(visualisation) | Window.IsActive(fullscreenvideo)] + !Player.HasGame</visible>
 			<animation effect="fade" time="350" delay="200" reversible="false">Visible</animation>
 			<animation effect="fade" time="350" reversible="false">Hidden</animation>
@@ -2176,8 +2189,9 @@
 		<value condition="Control.HasFocus(500)">[UPPERCASE]$LOCALIZE[250][/UPPERCASE]</value>
 		<value condition="Control.HasFocus(701)">[UPPERCASE]$LOCALIZE[24013][/UPPERCASE]</value>
 		<value condition="Control.HasFocus(806)">[UPPERCASE]$LOCALIZE[10700][/UPPERCASE]</value>
-		<value condition="Control.HasFocus(807)">[UPPERCASE]$LOCALIZE[4][/UPPERCASE]</value>
+        <value condition="Control.HasFocus(807)">[UPPERCASE]$LOCALIZE[4][/UPPERCASE]</value>
         <value condition="Control.HasFocus(808)">[UPPERCASE]$LOCALIZE[29915][/UPPERCASE]</value>
+        <value condition="Control.HasFocus(809)">[UPPERCASE]VS10 QUICK CONTROLS[/UPPERCASE]</value>
 		<value condition="Control.HasFocus(811)">[UPPERCASE]$LOCALIZE[559][/UPPERCASE]</value>
 		<value>[UPPERCASE]$LOCALIZE[33063][/UPPERCASE]</value>
     </variable>
