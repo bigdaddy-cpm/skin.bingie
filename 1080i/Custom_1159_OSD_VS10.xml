@@ -45,6 +45,7 @@
                 <label>Use Dolby Vision VS10</label>
                 <texturefocus border="10" background="true" colordiffuse="$INFO[Skin.String(ViewDetailsBorderFocusColor)]">bingie/border/default_button_focus.png</texturefocus>
                 <texturenofocus border="10" background="true" colordiffuse="$INFO[Skin.String(ViewDetailsBorderUnfocusColor)]">bingie/border/default_button_focus.png</texturenofocus>
+                <ondown>1002</ondown>
                 <onclick>Action(vs10.dv)</onclick>
                 <onclick>Dialog.Close(all)</onclick>
             </control>
@@ -62,6 +63,7 @@
                 <onclick>Action(vs10.hdr10)</onclick>
                 <onclick>Dialog.Close(all)</onclick>
                 <onup>1001</onup>
+                <ondown>1003</ondown>
             </control>
 
             <control type="button" id="1003">
@@ -77,6 +79,7 @@
                 <onclick>Action(vs10.sdr)</onclick>
                 <onclick>Dialog.Close(all)</onclick>
                 <onup>1002</onup>
+                <ondown>1004</ondown>
             </control>
 
             <control type="button" id="1004">
@@ -92,6 +95,7 @@
                 <onclick>Action(vs10.original)</onclick>
                 <onclick>Dialog.Close(all)</onclick>
                 <onup>1003</onup>
+                <ondown>1005</ondown>
             </control>
 
             <control type="button" id="1005">
@@ -107,6 +111,7 @@
                 <onclick>Dialog.Close(all)</onclick>
                 <onclick>ActivateWindow(playerprocessinfo)</onclick>
                 <onup>1004</onup>
+                <ondown>1001</ondown>
             </control>
         </control>
     </controls>
