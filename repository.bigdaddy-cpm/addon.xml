@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <addon id="repository.bigdaddy-cpm"
        name="bigdaddy-cpm Repository"
-       version="1.0.0"
+       version="1.0.1"
        provider-name="bigdaddy-cpm">
     <extension point="xbmc.addon.repository" name="bigdaddy-cpm Repository">
         <dir>
