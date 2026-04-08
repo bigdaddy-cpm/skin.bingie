@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<addon id="repository.bigdaddy-cpm"
+       name="bigdaddy-cpm Repository"
+       version="1.0.0"
+       provider-name="bigdaddy-cpm">
+    <extension point="xbmc.addon.repository" name="bigdaddy-cpm Repository">
+        <dir>
+            <info compressed="false">https://bigdaddy-cpm.github.io/addons.xml</info>
+            <checksum>https://bigdaddy-cpm.github.io/addons.xml.md5</checksum>
+            <datadir zip="true">https://bigdaddy-cpm.github.io/zips/</datadir>
+        </dir>
+    </extension>
+    <extension point="xbmc.addon.metadata">
+        <summary lang="en_GB">Kodi addon repository for Bingie.</summary>
+        <description lang="en_GB">Install and update addons published from the bigdaddy-cpm/skin.bingie repository.</description>
+        <platform>all</platform>
+        <license>GPL v2.0</license>
+        <source>https://github.com/bigdaddy-cpm/skin.bingie</source>
+    </extension>
+</addon>

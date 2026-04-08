@@ -9,7 +9,7 @@ $outputRoot = Join-Path $repoRoot $OutputDir
 $zipRoot = Join-Path $outputRoot "zips"
 $skinSourceDirs = @("1080i", "colors", "extras", "fonts", "language", "media", "resources", "shortcuts")
 $skinSourceFiles = @("addon.xml", "LICENSE", "README.md")
-$repoAddonDir = "repository.shawnstoked"
+$repoAddonDir = "repository.bigdaddy-cpm"
 $tempRoot = Join-Path ([System.IO.Path]::GetTempPath()) ("kodi-repo-" + [System.Guid]::NewGuid().ToString("N"))
 
 function Write-Utf8NoBom {
@@ -78,6 +78,7 @@ try {
 
     New-AddonZip -SourcePath $skinStage -DestinationZip $skinZip
     New-AddonZip -SourcePath $repoStage -DestinationZip $repoZip
+    Copy-Item -LiteralPath $repoZip -Destination (Join-Path $outputRoot ([System.IO.Path]::GetFileName($repoZip)))
 
     $addonsXml = @(
         '<?xml version="1.0" encoding="UTF-8" standalone="yes"?>'

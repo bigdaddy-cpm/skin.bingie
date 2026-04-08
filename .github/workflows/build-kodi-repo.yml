@@ -15,7 +15,7 @@ on:
       - "resources/**"
       - "shortcuts/**"
       - "addon.xml"
-      - "repository.shawnstoked/**"
+      - "repository.bigdaddy-cpm/**"
       - "tools/build-kodi-repo.ps1"
 
 jobs:
