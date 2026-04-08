@@ -32,7 +32,28 @@ function New-AddonZip {
         Remove-Item -LiteralPath $DestinationZip -Force
     }
 
-    Compress-Archive -Path (Join-Path $SourcePath "*") -DestinationPath $DestinationZip -CompressionLevel Optimal
+    $sourceParent = Split-Path -Path $SourcePath -Parent
+    $rootName = Split-Path -Path $SourcePath -Leaf
+
+    Add-Type -AssemblyName System.IO.Compression
+    Add-Type -AssemblyName System.IO.Compression.FileSystem
+
+    $zip = [System.IO.Compression.ZipFile]::Open($DestinationZip, [System.IO.Compression.ZipArchiveMode]::Create)
+    try {
+        $files = Get-ChildItem -LiteralPath $SourcePath -Recurse -File
+        foreach ($file in $files) {
+            $relativePath = $file.FullName.Substring($sourceParent.Length + 1).Replace('\', '/')
+            [System.IO.Compression.ZipFileExtensions]::CreateEntryFromFile(
+                $zip,
+                $file.FullName,
+                $relativePath,
+                [System.IO.Compression.CompressionLevel]::Optimal
+            ) | Out-Null
+        }
+    }
+    finally {
+        $zip.Dispose()
+    }
 }
 
 try {
