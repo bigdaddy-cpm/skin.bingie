@@ -41,6 +41,7 @@
     <include file="IncludesViewsLayoutSquare.xml" />
     <include file="IncludesViewsLayoutBanner.xml" />
     <include file="IncludesOSD.xml" />
+    <include file="IncludesP3IFlags.xml" />
     <include file="IncludesSkinSettings.xml" />
     <include file="IncludesContextMenu.xml" />
     <include file="IncludesHomeBingie.xml"/>

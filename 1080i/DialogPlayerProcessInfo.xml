@@ -48,8 +48,10 @@
                 <scroll>true</scroll>
             </control>
 
+            <include>P3I_PPI_CodecFlags</include>
+
             <control type="label">
-                <left>40</left>
+                <left>300</left>
                 <top>105</top>
                 <width>330</width>
                 <height>28</height>
@@ -58,7 +60,7 @@
                 <label>Video</label>
             </control>
             <control type="label">
-                <left>460</left>
+                <left>660</left>
                 <top>105</top>
                 <width>330</width>
                 <height>28</height>
@@ -67,7 +69,7 @@
                 <label>Processing</label>
             </control>
             <control type="label">
-                <left>880</left>
+                <left>1020</left>
                 <top>105</top>
                 <width>330</width>
                 <height>28</height>
@@ -76,7 +78,7 @@
                 <label>System / Audio</label>
             </control>
             <control type="label">
-                <left>1300</left>
+                <left>1380</left>
                 <top>105</top>
                 <width>330</width>
                 <height>28</height>
@@ -86,9 +88,9 @@
             </control>
 
             <control type="textbox">
-                <left>40</left>
+                <left>300</left>
                 <top>145</top>
-                <width>360</width>
+                <width>320</width>
                 <height>650</height>
                 <font>Reg20</font>
                 <textcolor>$INFO[Skin.String(GeneralTextColor)]</textcolor>
@@ -96,9 +98,9 @@
             </control>
 
             <control type="textbox">
-                <left>460</left>
+                <left>660</left>
                 <top>145</top>
-                <width>360</width>
+                <width>320</width>
                 <height>650</height>
                 <font>Reg20</font>
                 <textcolor>$INFO[Skin.String(GeneralTextColor)]</textcolor>
@@ -106,9 +108,9 @@
             </control>
 
             <control type="textbox">
-                <left>880</left>
+                <left>1020</left>
                 <top>145</top>
-                <width>360</width>
+                <width>320</width>
                 <height>650</height>
                 <font>Reg20</font>
                 <textcolor>$INFO[Skin.String(GeneralTextColor)]</textcolor>
@@ -116,9 +118,9 @@
             </control>
 
             <control type="textbox">
-                <left>1300</left>
+                <left>1380</left>
                 <top>145</top>
-                <width>360</width>
+                <width>300</width>
                 <height>300</height>
                 <font>Reg20</font>
                 <textcolor>$INFO[Skin.String(GeneralTextColor)]</textcolor>
@@ -127,9 +129,9 @@
             </control>
 
             <control type="textbox">
-                <left>1300</left>
+                <left>1380</left>
                 <top>145</top>
-                <width>360</width>
+                <width>300</width>
                 <height>620</height>
                 <font>Reg20</font>
                 <textcolor>$INFO[Skin.String(GeneralTextColor)]</textcolor>
