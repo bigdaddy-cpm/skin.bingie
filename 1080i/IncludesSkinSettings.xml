@@ -218,6 +218,7 @@
             <include>OSD_General_Settings</include>
             <include>OSD_Info_Panel_Settings</include>
             <include>OSD_Video_Playback_Settings</include>
+            <include>P3I_CoreELEC_Settings</include>
             <include>OSD_Up_Next_Settings</include>
             <include>OSD_Music_Playback_Settings</include>
         </include>
@@ -1710,11 +1711,33 @@
             <selected>Skin.HasSetting(EnableAutoPauseOnOSD)</selected>
         </control>
 		<!-- Show Info on Pause -->
-		<control type="radiobutton" id="31092">
+        <control type="radiobutton" id="31092">
             <include>SkinSettings_Button</include>
             <label>$LOCALIZE[31092]</label>
             <onclick>Skin.ToggleSetting(OSDShowInfoOnPause)</onclick>
             <selected>Skin.HasSetting(OSDShowInfoOnPause)</selected>
+        </control>
+    </include>
+
+    <include name="P3I_CoreELEC_Settings">
+        <control type="label" id="319650">
+            <include>SkinSettings_Header</include>
+            <label>p3i / CoreELEC</label>
+            <visible>System.AddonIsEnabled(service.coreelec.settings)</visible>
+        </control>
+        <control type="button" id="319651">
+            <include>SkinSettings_Button</include>
+            <label>Open CoreELEC settings</label>
+            <label2>service.coreelec.settings</label2>
+            <onclick>RunAddon(service.coreelec.settings)</onclick>
+            <visible>System.AddonIsEnabled(service.coreelec.settings)</visible>
+        </control>
+        <control type="radiobutton" id="319652">
+            <include>SkinSettings_Button</include>
+            <label>Show VS10 quick controls in OSD</label>
+            <onclick>Skin.ToggleSetting(P3I.DisableVS10OSD)</onclick>
+            <selected>!Skin.HasSetting(P3I.DisableVS10OSD)</selected>
+            <visible>System.AddonIsEnabled(service.coreelec.settings)</visible>
         </control>
     </include>
 

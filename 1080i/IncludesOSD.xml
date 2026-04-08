@@ -1922,6 +1922,7 @@
                     <visible>Player.HasVideo</visible>
                     <visible>VideoPlayer.Content(movies) | VideoPlayer.Content(episodes) | VideoPlayer.Content(livetv)</visible>
                     <visible>System.AddonIsEnabled(service.coreelec.settings)</visible>
+                    <visible>!Skin.HasSetting(P3I.DisableVS10OSD)</visible>
                     <onclick>ActivateWindow(1159)</onclick>
                 </control>
             </control>
