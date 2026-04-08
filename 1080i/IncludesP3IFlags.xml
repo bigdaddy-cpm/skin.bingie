@@ -12,7 +12,7 @@
                 <control type="image">
                     <width>210</width>
                     <height>90</height>
-                    <texture colordiffuse="80FFFFFF">media/common/corner_small.png</texture>
+                    <texture colordiffuse="80FFFFFF">common/corner_small.png</texture>
                 </control>
             </control>
 
@@ -23,7 +23,7 @@
                 <control type="image">
                     <width>150</width>
                     <height>52</height>
-                    <texture>media/codecs/SDR.png</texture>
+                    <texture>codecs/SDR.png</texture>
                 </control>
             </control>
             <control type="group">
@@ -33,7 +33,7 @@
                 <control type="image">
                     <width>150</width>
                     <height>52</height>
-                    <texture>media/codecs/HDR10.png</texture>
+                    <texture>codecs/HDR10.png</texture>
                 </control>
             </control>
             <control type="group">
@@ -43,7 +43,7 @@
                 <control type="image">
                     <width>150</width>
                     <height>52</height>
-                    <texture>media/codecs/HDR10Plus.png</texture>
+                    <texture>codecs/HDR10Plus.png</texture>
                 </control>
             </control>
             <control type="group">
@@ -53,7 +53,7 @@
                 <control type="image">
                     <width>150</width>
                     <height>56</height>
-                    <texture>media/codecs/Dolby_Vision.png</texture>
+                    <texture>codecs/Dolby_Vision.png</texture>
                 </control>
             </control>
             <control type="group">
@@ -63,7 +63,7 @@
                 <control type="image">
                     <width>150</width>
                     <height>42</height>
-                    <texture>media/codecs/HLG.png</texture>
+                    <texture>codecs/HLG.png</texture>
                 </control>
             </control>
 
@@ -74,7 +74,7 @@
                 <control type="image">
                     <width>8</width>
                     <height>8</height>
-                    <texture>media/codecs/VS10.png</texture>
+                    <texture>codecs/VS10.png</texture>
                 </control>
             </control>
             <control type="group">
@@ -84,7 +84,7 @@
                 <control type="image">
                     <width>150</width>
                     <height>52</height>
-                    <texture>media/codecs/SDR.png</texture>
+                    <texture>codecs/SDR.png</texture>
                 </control>
             </control>
             <control type="group">
@@ -94,7 +94,7 @@
                 <control type="image">
                     <width>150</width>
                     <height>52</height>
-                    <texture>media/codecs/HDR10.png</texture>
+                    <texture>codecs/HDR10.png</texture>
                 </control>
             </control>
             <control type="group">
@@ -104,7 +104,7 @@
                 <control type="image">
                     <width>150</width>
                     <height>56</height>
-                    <texture>media/codecs/Dolby_Vision.png</texture>
+                    <texture>codecs/Dolby_Vision.png</texture>
                 </control>
             </control>
 
@@ -114,7 +114,7 @@
                 <control type="image">
                     <width>210</width>
                     <height>90</height>
-                    <texture colordiffuse="80FFFFFF">media/common/corner_small.png</texture>
+                    <texture colordiffuse="80FFFFFF">common/corner_small.png</texture>
                 </control>
             </control>
 
@@ -125,7 +125,7 @@
                 <control type="image">
                     <width>150</width>
                     <height>49</height>
-                    <texture>media/codecs/PCM.png</texture>
+                    <texture>codecs/PCM.png</texture>
                 </control>
             </control>
             <control type="group">
@@ -135,7 +135,7 @@
                 <control type="image">
                     <width>150</width>
                     <height>56</height>
-                    <texture>media/codecs/AAC.png</texture>
+                    <texture>codecs/AAC.png</texture>
                 </control>
             </control>
             <control type="group">
@@ -145,7 +145,7 @@
                 <control type="image">
                     <width>150</width>
                     <height>56</height>
-                    <texture>media/codecs/Dolby_Digital.png</texture>
+                    <texture>codecs/Dolby_Digital.png</texture>
                 </control>
             </control>
             <control type="group">
@@ -155,7 +155,7 @@
                 <control type="image">
                     <width>150</width>
                     <height>56</height>
-                    <texture>media/codecs/Dolby_Digital_Plus.png</texture>
+                    <texture>codecs/Dolby_Digital_Plus.png</texture>
                 </control>
             </control>
             <control type="group">
@@ -165,7 +165,7 @@
                 <control type="image">
                     <width>150</width>
                     <height>56</height>
-                    <texture>media/codecs/Dolby_Digital_Plus_Atmos.png</texture>
+                    <texture>codecs/Dolby_Digital_Plus_Atmos.png</texture>
                 </control>
             </control>
             <control type="group">
@@ -175,7 +175,7 @@
                 <control type="image">
                     <width>150</width>
                     <height>56</height>
-                    <texture>media/codecs/Dolby_TrueHD.png</texture>
+                    <texture>codecs/Dolby_TrueHD.png</texture>
                 </control>
             </control>
             <control type="group">
@@ -185,7 +185,7 @@
                 <control type="image">
                     <width>150</width>
                     <height>56</height>
-                    <texture>media/codecs/Dolby_TrueHD_Atmos.png</texture>
+                    <texture>codecs/Dolby_TrueHD_Atmos.png</texture>
                 </control>
             </control>
             <control type="group">
@@ -195,7 +195,7 @@
                 <control type="image">
                     <width>150</width>
                     <height>49</height>
-                    <texture>media/codecs/MP3.png</texture>
+                    <texture>codecs/MP3.png</texture>
                 </control>
             </control>
             <control type="group">
@@ -205,7 +205,7 @@
                 <control type="image">
                     <width>100</width>
                     <height>25</height>
-                    <texture>media/codecs/DTS.png</texture>
+                    <texture>codecs/DTS.png</texture>
                 </control>
             </control>
             <control type="group">
@@ -215,7 +215,7 @@
                 <control type="image">
                     <width>150</width>
                     <height>46</height>
-                    <texture>media/codecs/DTS-HD-MA.png</texture>
+                    <texture>codecs/DTS-HD-MA.png</texture>
                 </control>
             </control>
             <control type="group">
@@ -225,7 +225,7 @@
                 <control type="image">
                     <width>150</width>
                     <height>49</height>
-                    <texture>media/codecs/DTS-HD-HRA.png</texture>
+                    <texture>codecs/DTS-HD-HRA.png</texture>
                 </control>
             </control>
             <control type="group">
@@ -235,7 +235,7 @@
                 <control type="image">
                     <width>150</width>
                     <height>31</height>
-                    <texture>media/codecs/DTSX.png</texture>
+                    <texture>codecs/DTSX.png</texture>
                 </control>
             </control>
             <control type="group">
@@ -245,7 +245,7 @@
                 <control type="image">
                     <width>150</width>
                     <height>48</height>
-                    <texture>media/codecs/IMAX.png</texture>
+                    <texture>codecs/IMAX.png</texture>
                 </control>
             </control>
             <control type="group">
@@ -255,7 +255,7 @@
                 <control type="image">
                     <width>150</width>
                     <height>45</height>
-                    <texture>media/codecs/FLAC.png</texture>
+                    <texture>codecs/FLAC.png</texture>
                 </control>
             </control>
             <control type="group">
@@ -265,7 +265,7 @@
                 <control type="image">
                     <width>150</width>
                     <height>45</height>
-                    <texture>media/codecs/OPUS.png</texture>
+                    <texture>codecs/OPUS.png</texture>
                 </control>
             </control>
         </control>
